@@ -3,3 +3,9 @@
 .inter{font-family: "Inter", sans-serif;}
 .noto{font-family: "Noto Serif", serif;}
 
+.text-design{
+    top: 50%;
+    left: 50%;
+width: 400px;
+    transform: translate(-50%, -50%);
+}
