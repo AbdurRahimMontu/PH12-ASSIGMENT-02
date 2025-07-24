@@ -6,37 +6,23 @@
     <title>Flower Market</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
-    <!-- <style>
-input.form-control {
-  border: 0;
-  padding: 2px;
-}
-
-.input-group {
-  border: 1px solid gray;
-  display: inline-block;
-}
-    </style> -->
   </head>
   <body>
       <header class=" max-w-7xl mx-auto">
-        <nav class="flex justify-between py-5">
+        <nav class="flex justify-between py-5 px-4 xl:px-0">
             <div class="logo cursor-pointer "><img width="100px" src="./assets/logo.png" alt=""></div>
             <ul class="flex gap-5 items-center inter font-normal opacity-80">
-                <li class="hover:font-bold"><a href="#">Home</a></li>
-                <li class="hover:font-bold"><a href="#">Shop</a></li>
-                <li class="hover:font-bold"><a href="#">About us</a></li>
+                <li class="hover:font-bold hidden  md:block"><a href="#">Home</a></li>
+                <li class="hover:font-bold hidden md:block" ><a href="#">Shop</a></li>
+                <li class="hover:font-bold hidden md:block"><a href="#">About us</a></li>
                 <li class="hover:font-bold"><button class="flex cursor-pointer gap-1">
                         <img  src="./assets/shopping-cart.png" alt=""> 
                         <span>Cart ($56)</span> 
                     </button>
                  </li>
-             
             </ul>
         </nav>
-        <div class="banner flex  my-20 items-center ">
+        <div class=" banner lg:flex-row flex  flex-col-reverse my-20 items-center ">
             <div class="banner-content flex-1">
                    <h1 class="text-6xl font-extrabold noto  leading-20">ALWAYS <span class="text-[#E95A08] ">FRESH FLOWERS</span> </h1>
                    <p class="text-xl opacity-80 inter font-normal">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
@@ -45,14 +31,14 @@ input.form-control {
               <img width="100%" src="./assets/hero-flower.png" alt="">
             </div>
       </header>
-      <main >
+      <main class="">
         <!--  plants section -->
         <section class=" plants mb-20 max-w-7xl mx-auto ">
             <div class=" max-w-4xl mx-auto text-center">
                 <h2 class="noto text-5xl font-bold"><span class="text-[#E95A08]">Our</span> Plants</h2>
                 <p class="text-xl opacity-80 inter font-normal py-6">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="card grid lg:grid-cols-4 gap-5">
+            <div class="card grid lg:grid-cols-4 grid-cols-2 gap-5">
                 <div class="single-card bo">
                     <div class="card-image">
                         <img width="100%" src="./assets/sample-flower-image.png" alt="">
@@ -149,58 +135,45 @@ input.form-control {
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- plants love section -->
          <section class=" plants-love my-30 relative max-w-7xl mx-auto">
-            <div class="plants-love-container flex items-center gap-20">
+            <div class="plants-love-container flex-col flex lg:flex-row items-center gap-20">
                 <div class="plants-love-image flex-1">
                     <img class="w-full h-[500px]" src="./assets/flower-store.png" alt="">
                 </div>
                 <div class="plants-love-content flex-1">
                     <h2 class="text-5xl font-bold noto">Flower & Plants <p class="py-4">Lover</p></h2>
-                  
                        <ul class="list-disc pl-5">
                          <li class="inter  font-normal text-xl opacity-80">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
-                       
                          </li>
                         <li class="inter font-normal text-xl opacity-80">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li class="inter font-normal text-xl opacity-80">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                        </ul>
-                 
-                 
                 </div>
-                <span class="absolute w-60 -top-25 left-110 "><img width="100%" src="./assets/trusted-badge.png" alt=""> </span>
+                <span class="absolute hidden lg:block w-60 -top-25 left-110 "><img width="100%" src="./assets/trusted-badge.png" alt=""> </span>
             </div>
-          
          </section>
          <!-- Join section -->
-         <section class="join my-20 bg-cover flex items-center text-center justify-center h-[400px]  bg-[url('./assets/news-letter-bg.png')]">
-            <div class="join-container  flex flex-col gap-5  p-10 justify-center ">
-                <h3 class="noto text-5xl font-bold text-white  ">Join the colorful Bunch</h3>
-          
+         <section class=" join my-20  bg-center flex items-center text-center justify-center h-[400px]  bg-[url('./assets/news-letter-bg.png')]">
+            <div class="join-container  flex flex-col gap-5 w-[900px] py-10 justify-center ">
+                <h3 class="noto lg:text-5xl text-2xl font-bold text-white  ">Join the colorful Bunch</h3>
                    <div class=" relative ">
-        <input size="90" class="  px-2 bg-white text-black py-2" type="email" name="email" id="email" placeholder="Write Email">
-        <!-- <input class="  py-2 px-2 text-white bg-[#E95A08] cursor-pointer " type="submit" value="Subscribe"> -->
-        <button class=" absolute right-0 py-2 px-8 text-white bg-[#E95A08] cursor-pointer ">Subscribe</button>
+        <input class="  px-2 lg:w-[700px]  bg-white text-black py-2" type="email" name="email" id="email" placeholder="Write Email">
+        <button class=" right-0 py-2 -ml-1 px-8 text-white bg-[#E95A08] cursor-pointer ">Subscribe</button>
                    </div>
-
             </div>
-
          </section>
       </main>
       <!-- Footer Section -->
-      <footer  class="max-w-7xl mx-auto" >
-        <div class=" flex mb-20 justify-between ">
+      <footer  class=" max-w-7xl mx-auto" >
+        <div class=" lg:flex mb-20 justify-between ">
             <div class="footer-left  flex-1  ">
-              
                 <img src="./assets/logo.png" alt="">
-              
                 <p class="inter font-normal text-xl opacity-80 mt-5">Indulge your senses with the <br> beauty and fragrance of our fresh  <br>flower shop. </p>
             </div>
-            <div class="footer-middle flex  items-center justify-between flex-1 ">
-               
+            <div class="footer-middle lg:flex  items-center justify-between flex-1 ">
                     <ul class="footer-middle-left text-base flex flex-col gap-5 opacity-80  ">
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
@@ -208,7 +181,6 @@ input.form-control {
                     <li><a href="">FAQ</a></li>
                     <li><a href="">Contact Us</a></li>
                     </ul>
-               
                 <ul class="footer-middle-right text-base justify-center flex flex-col gap-5 opacity-80 ">
               <li><a href="">Features</a></li>
                     <li><a href="">Pricing</a></li>
@@ -217,7 +189,7 @@ input.form-control {
                     <li><a href="">Help Center</a></li>
                 </ul>
             </div>
-            <div class="footer-right  flex w-8 h-8 gap-5 flex-1 justify-end">
+            <div class="footer-right  flex w-8 h-8 gap-5 flex-1 lg:justify-end ">
                <img  src="./assets/icon-linkedin.png" alt="">
                 <img  src="./assets/icon-twitter.png" alt="">
                 <img   src="./assets/icon-facebook.png" alt="">
@@ -225,7 +197,5 @@ input.form-control {
             </div>
         </div>
       </footer>
-
-     
   </body>
 </html>
