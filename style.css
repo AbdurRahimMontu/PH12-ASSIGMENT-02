@@ -1,11 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-.inter{font-family: "Inter", sans-serif;}
-.noto{font-family: "Noto Serif", serif;}
-
-.text-design{
-    top: 50%;
-    left: 50%;
-width: 400px;
-    transform: translate(-50%, -50%);
+.inter {
+  font-family: "Inter", sans-serif;
 }
+.noto {
+  font-family: "Noto Serif", serif;
+}
+
+.text-design {
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.badge-animation {
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+

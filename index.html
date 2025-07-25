@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Market</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-      <header class=" max-w-7xl mx-auto">
+      <header class="max-w-7xl mx-auto">
         <nav class="flex justify-between py-5 px-4 xl:px-0">
-            <div class="logo cursor-pointer "><img width="100px" src="./assets/logo.png" alt=""></div>
+            <div class="cursor-pointer"><img width="80%" src="./assets/logo.png" alt=""></div>
             <ul class="flex gap-5 items-center inter font-normal opacity-80">
-                <li class="hover:font-bold hidden  md:block"><a href="#">Home</a></li>
+                <li class="hover:font-bold hidden md:block"><a href="#">Home</a></li>
                 <li class="hover:font-bold hidden md:block" ><a href="#">Shop</a></li>
                 <li class="hover:font-bold hidden md:block"><a href="#">About us</a></li>
                 <li class="hover:font-bold"><button class="flex cursor-pointer gap-1">
@@ -22,9 +23,10 @@
                  </li>
             </ul>
         </nav>
-        <div class=" banner lg:flex-row flex  flex-col-reverse my-20 items-center px-5 xl:px-0">
+        <!-- Navbar Section End-->
+        <div class=" banner lg:flex-row flex flex-col-reverse mt-10 mb-15 items-center px-5 xl:px-0">
             <div class="banner-content flex-1 ">
-                   <h1 class="md:text-4xl lg:text-5xl  text-3xl py-5 md:py-0 font-extrabold noto  md:leading-20">ALWAYS <span class="text-[#E95A08] ">FRESH FLOWERS</span> </h1>
+                   <h1 class="md:text-5xl text-3xl py-5 md:py-0 font-extrabold noto  md:leading-20">ALWAYS <span class="text-[#E95A08] ">FRESH <br> FLOWERS</span> </h1>
                    <p class="text-xl opacity-80 inter font-normal">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
             </div>
             <div class="banner-image flex-1  flex-end md:w-[700px]  ">
@@ -47,7 +49,7 @@
                         <h3 class="inter font-medium text-xl pt-5">Lily Blossom</h3>
                         <h4 class="inter font-bold text-xl pb-5">20 USD</h4>
                         <div class="btn">
-                            <button class="bg-[#E95A08] w-full inter font-semibold text-white px-5 py-2 cursor-pointer">ADD TO CART</button>
+            <button  class="bg-[#E95A08] w-full inter font-semibold text-white px-5 py-2 cursor-pointer">ADD TO CART 1</button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +146,7 @@
                     <img class="lg:w-full w-[700px] h-[500px] " src="./assets/flower-store.png" alt="">
                 </div>
                 <div class="plants-love-content flex-1">
-    <h2 class="lg:text-5xl font-bold noto text-3xl">Flower & Plants <p class="py-4 md:block inline-block">Lover</p></h2>
+    <h2 class="lg:text-5xl font-bold noto text-3xl">Flower & Plants <p class="py-4 lg:block inline-block">Lover</p></h2>
                        <ul class="list-disc pl-5">
                          <li class="inter  font-normal text-xl opacity-80">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
                          </li>
@@ -152,7 +154,8 @@
                         <li class="inter font-normal text-xl opacity-80">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                        </ul>
                 </div>
-                <span class="absolute hidden xl:block w-60 -top-25 left-110 "><img width="100%" src="./assets/trusted-badge.png" alt=""> </span>
+                <!-- Badge Section -->
+                <span class="absolute badge-animation  hidden xl:block w-60 -top-25 left-110 "><img width="100%" src="./assets/trusted-badge.png" alt=""> </span>
             </div>
          </section>
          <!-- latest Deal Section -->
@@ -163,20 +166,20 @@
             </div>
               <div class="image-container grid lg:grid-cols-3 grid-cols-1 lg:gap-5" >
                   <div class="flex flex-col gap-10 ">
-                  <div class="relative bg-[#00000080] bg-[url('./assets/deal-bloom.png')] bg-blend-multiply bg-no-repeat bg-cover h-[220px]" > 
+                  <div class="relative bg-[#00000080] bg-[url('./assets/deal-bloom.png')] bg-blend-multiply rounded-2xl bg-no-repeat bg-cover h-[220px]" > 
                         <span class="absolute text-design  text-center text-white">
                             <p class="noto lg:text-xl text-md font-semibold">60% Off | Bloom Plant</p>
                             <p class="underline"><a href="#">Shop Now</a></p>
                         </span>
                     </div>
-                  <div class="relative bg-[#00000080] bg-[url('./assets/deal-ana.png')] bg-blend-multiply bg-no-repeat bg-cover h-[220px]" >
+                  <div class="relative bg-[#00000080] bg-[url('./assets/deal-ana.png')] bg-blend-multiply  rounded-2xl  bg-no-repeat bg-cover h-[220px]" >
                         <span class="absolute text-design text-center text-white">
                             <p class="noto md:text-xl text-md font-bold">30% Off | Ana Plant</p>
                             <p class="underline"><a href="#">Shop Now</a></p>
                         </span>
                     </div>
                 </div>
-        <div class="relative col-span-2  lg:ml-5 mt-10 lg:mt-0 bg-[url('./assets/deal-zabo.png')] bg-[#00000080]  bg-blend-multiply bg-no-repeat bg-cover lg:h-full  h-[220px]">
+        <div class="relative col-span-2  lg:ml-5 mt-10 lg:mt-0 bg-[url('./assets/deal-zabo.png')] bg-[#00000080]  rounded-2xl  bg-blend-multiply bg-no-repeat bg-cover lg:h-full  h-[220px]">
                     
                         <span class="absolute text-design  text-center text-white">
                             <p class="noto lg:text-4xl text-md text-center font-bold">25% Off | Zabo Plant</p>
@@ -195,6 +198,7 @@
         </div>
             </div>
          </section>
+
       </main>
       <!-- Footer Section -->
       <footer  class=" max-w-7xl mx-auto px-5 xl:px-0" >
@@ -227,5 +231,6 @@
             </div>
         </div>
       </footer>
+      <script src="script.js"></script>
   </body>
 </html>
